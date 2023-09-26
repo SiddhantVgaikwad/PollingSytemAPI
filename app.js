@@ -48,9 +48,12 @@ app.use(function (req, res, next) {
 
 
 
-//Routes******************************************************************************************************************************************
+//Routes
+app.re
+app.use('/',routes,(req,res) => {
+  res.redirect('/allquestions')
 
-app.use('/',routes)
+})
 
 
 app.listen(port,()=>{
